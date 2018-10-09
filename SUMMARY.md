@@ -1,4 +1,4 @@
 # Summary
 
-* [مقدمه](README.md)
+* [مقدمه](GLOSSARY.md)
 

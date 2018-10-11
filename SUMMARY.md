@@ -1,4 +1,0 @@
-# Summary
-
-* [مقدمه](GLOSSARY.md)
-

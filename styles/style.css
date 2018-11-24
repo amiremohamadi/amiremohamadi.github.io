@@ -247,11 +247,6 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .single-blog .post-content .post-meta {
-    color: #777;
-    font-size: 14px;
-    margin-left: 0;
-  }
   .single-blog .post-content .post-meta li {
     margin: 0;
     padding: 0;
@@ -261,6 +256,17 @@
       line-height: 1;
       margin-bottom: 0;
       padding-bottom: 0;
+  }
+  .single-blog .about {
+    text-align: center;
+  }
+  .single-blog .about .head-image {
+    width: 100%;
+    text-align: center;
+  }
+  .single-blog .about .head-image img {
+    border-radius: 100%; 
+    width: 100px;
   }
   .pagination {
     display: inline-block;

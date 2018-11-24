@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<!-- Document Settings -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Page Title -->
+	<title>{{ page.title }}</title>
+	<!-- Styles -->
+	<link rel="stylesheet" href="{{ root_url }}/styles/style.css">
+</head>
+
+<body>
+<!-- Scripts -->
+<script src="{{ root_url }}/js/shrink.js"></script>
+
+<header id="header">
+	<nav class="navbar  navbar-default">
+		<div class="container">
+			<div id="logo">
+				<img id="logo" src="{{ root_url }}/img/header-me.png">
+			</div>
+			<div id="restofheader">
+				<a href="/">خانه</a>
+				<a href="/about-me">تماس و درباره من</a>
+			</div>
+		</div>
+	</nav>
+	<div id="progress" style="box-shadow: 0px 0px 1px 0px;height: 1.3px; width: 0%; background: #0ca3ad"></div>
+</header>
+
+<div class="default-content">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-sm-8">
+				<article class="single-blog">
+					<div class="post-thumb">
+						{% if post.head_image %}
+						<img style="width: 100%" src="/media/{{ post.head_image }}">							
+						{% endif %}
+						<div class="post-content">
+							<div class="entry-header text-center">
+								<h2>{{ page.title }}</h2>
+							</div>
+							<div class="entry-content">
+								<p>
+									{{ page.content }}
+								</p>
+							</div>
+							<div class="post-meta">
+								<ul class="list-inline author-meta">
+									<li class="date">{{ page.fadate }}</li>
+									<li class="meta-text">منتشر شده در</li>
+									<a href="" class="post-cat">{{ page.tag }}</a>
+								</ul>
+							</div>
+					</div>
+				</article>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="sidebar">
+					<aside class="widget about-me-widget  text-center">
+						<div class="about-me-content">
+							<div class="about-me-img">
+								<img src="{{ root_url }}/img/me.png" alt="" class="img-me img-circle">
+								<h2 class="text-uppercase">سلام</h2>
+								<p>این منم! امیر محمدی
+								<br/>
+									عاشق وَر رفتن با یه سری موجود دودویی که ظاهرا بهشون میگن کامپیوتر! 
+								</p>
+							</div>
+						</div>
+					</aside>
+					<aside class="widget widget-popular-post">
+						<h3 class="widget-title text-uppercase text-center">پر بازدیدها</h3>
+						<ul>
+							<li>
+								<div class="p-content">
+									<h4><a href="#" class="text-uppercase">با شونه قهرم!</a></h4>
+									<span class="p-date">۲ آذر ۹۷ </span>
+								</div>
+							</li>
+						</ul>
+					</aside>
+					<aside class="widget widget-popular-post">
+							<h3 class="widget-title text-uppercase text-center">لینکهای دوستداشتنی</h3>
+							<ul>
+								<h4><a href="#" class="text-uppercase">کیبورد آزاد</a></h4>
+								<h4><a href="#" class="text-uppercase">سحر شاکر</a></h4>
+							</ul>
+						</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container-fluid text-center ft-copyright">
+		<p>
+			<a href="https://github.com/amiremohamadi">ساخته و پرداخته شده توسط خودم (: </a>
+		</p>
+	</div>
+</footer>
+</body>
+</html>

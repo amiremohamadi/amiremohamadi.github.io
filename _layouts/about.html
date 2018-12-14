@@ -47,15 +47,42 @@
                                 </div>
 								<p>
 									{{ page.content }}
-								</p>
+								</p>	
 							</div>
 					</div>
 				</article>
+
+				<article class="single-blog">
+						<div class="post-thumb">
+							<div class="post-content">
+								<div class="entry-header text-center">
+									<h2>حرفی؟ سخنی؟!</h2>
+								</div>
+								<div class="contact">
+									<form id="contact-form" method="POST">
+										<input type="hidden" name="_subject" value="وبلاگ" />
+										<input type="hidden" name="_next" value="/404.html" />
+										<input type="text" name="name" placeholder="اسمتون" required> <br/>
+										<input type="email" name="_replyto" placeholder="ایمیل" required> <br/>
+										<textarea name="message" required></textarea> 
+										<input type="text" name="_gotcha" style="display:none" />
+										<input type="submit" value="ارسال">
+									</form>
+									<script>
+										var contactform =  document.getElementById('contact-form');
+										contactform.setAttribute('action', '//formspree.io/' + 'amiremohamadi' + '@' + 'yahoo' + '.' + 'com');
+									</script>
+								</div>
+						</div>
+					</article>
+
 			</div>
-		{% include sidebar.html %}        
+		{% include sidebar.html %}  
 		</div>
 	</div>
 </div>
+
+
 <footer>
 	<div class="container-fluid text-center ft-copyright">
 		<p>

@@ -10,5 +10,6 @@ title: تماس و درباره من
 <br/>
 به خوندن و نوشتن علاقه دارم و با شونه و قیچی هم قهرم (:
 <br/>
-[***amiremohamadi@yahoo.com***](mailto:amiremohamadi@yahoo.com) ایمیلم هست و اگه به ارتباط امن اعتقاد دارید، 
-[**«پابلیک کی» من اینجاست**](/pgp.txt)
+<p>
+<a href="mailto:amiremohamadi@yahoo.com"><strong>amiremohamadi@yahoo.com</strong></a> ایمیلم هست و اگه به ارتباط امن اعتقاد دارید، <a href="/pgp.txt"><strong>«پابلیک کی» من اینجاست</strong></a>
+</p>

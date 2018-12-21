@@ -6,8 +6,7 @@ layout: default
     <div class="col-sm-8">
         {% for post in site.posts %}
             <article class="single-blog">
-                <div class="post-thumb">
-                    <img style="width: 100%" src="{{ post.image }}">							
+                <div class="post-thumb">						
                     <div class="post-content">
                         <div class="entry-header text-center">
                             <h2><a href="{{ post.url | remove_first:'/'}}">{{ post.title }}</a></h2>

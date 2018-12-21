@@ -12,7 +12,6 @@
 }
 .highlight .c1 {
   color: #999988;
-  font-style: italic;
 }
 .highlight .cs {
   color: #999999;
@@ -62,11 +61,11 @@
   font-weight: bold;
 }
 .highlight .kd {
-  color: #000000;
+  color: #aa0000;
   font-weight: bold;
 }
 .highlight .kn {
-  color: #000000;
+  color: #dc0bd1;
 }
 .highlight .kp {
   color: #000000;
@@ -132,7 +131,7 @@
   color: #990073;
 }
 .highlight .s {
-  color: #d14;
+  color: #078945;
 }
 .highlight .na {
   color: #008080;

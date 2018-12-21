@@ -1,4 +1,4 @@
-
+﻿
 
 <!DOCTYPE html>
 <html lang="fa">
@@ -39,8 +39,8 @@
 			<div class="col-sm-8">
 				<article class="single-blog">
 					<div class="post-thumb">
-						{% if post.head_image %}
-						<img style="width: 100%" src="/media/{{ post.head_image }}">							
+						{% if page.image %}
+                        <img style="width: 100%" src="{{ root_url }}/upload/{{ page.image }}">							
 						{% endif %}
 						<div class="post-content">
 							<div class="entry-header text-center">
@@ -58,7 +58,8 @@
 									<a href="" class="post-cat">{{ page.tag }}</a>
 								</ul>
 							</div>
-					</div>
+					    </div>
+                    </div>
 				</article>
 			</div>
 			

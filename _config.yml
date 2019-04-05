@@ -1,6 +1,6 @@
 # Site settings
 title: AMIR
-SEOTitle: روزنوشتهای یک کامپیوترپیشه
+SEOTitle: پسرک کامپیوترپیشه
 header-img: img/home-bg.jpg
 email: amiremohamadi@yahoo.com
 description: ""
@@ -11,7 +11,6 @@ url: "http://mamir.me"              # your host, for absolute URL
 # SNS settings
 RSS: false
 telegram_username:     amiremohamadi
-mail_username:     amiremohamadi@yahoo.com
 github_username:    amiremohamadi
 instagram_username:  amiremohamadi
 

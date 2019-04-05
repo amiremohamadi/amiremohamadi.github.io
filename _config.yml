@@ -1,4 +1,13 @@
+---
 title: AMIR
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 SEOTitle: پسرک کامپیوترپیشه
 header-img: img/home-bg.jpg
 email: amiremohamadi@yahoo.com

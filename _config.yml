@@ -1,68 +1,42 @@
-# Site settings
 title: AMIR
 SEOTitle: پسرک کامپیوترپیشه
 header-img: img/home-bg.jpg
 email: amiremohamadi@yahoo.com
-description: ""
-keyword: ""
-url: "http://mamir.me"              # your host, for absolute URL
-
-
-# SNS settings
+description: ''
+keyword: ''
+url: http://mamir.me
 RSS: false
-telegram_username:     amiremohamadi
-github_username:    amiremohamadi
-instagram_username:  amiremohamadi
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+telegram_username: amiremohamadi
+mail_username: amiremohamadi@yahoo.com
+github_username: amiremohamadi
+instagram_username: amiremohamadi
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
-
-# document: http://jekyllrb.com/docs/configuration/#kramdown
+exclude:
+- less
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md
+anchorjs: true
+plugins:
+- jekyll-paginate
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Analytics settings
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+  input: GFM
+ga_track_id: UA-49627206-1
 ga_domain: mamir.me
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "عاشق وررفتن با یه سری موجود دودویی که ظاهرا بهشون میگن: کامپیوتر!"
-sidebar-avatar: /img/avatar-hux.png      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-# Friends
-friends: [
-    {
-        title: "کیبرد آزاد",
-        href: "#"
-    },{
-        title: "سحر شاکر",
-        href: "#"
-    },{
-        title: "صدرا علی آبادی",
-        href: "#"
-    },{
-        title: "سالار کابلی",
-        href: "#"
-    }
-]
+sidebar: true
+sidebar-about-description: 'عاشق وررفتن با یه سری موجود دودویی که ظاهرا بهشون میگن:
+  کامپیوتر!'
+sidebar-avatar: "/img/avatar-hux.png"
+friends:
+- title: کیبرد آزاد
+  href: "#"
+- title: سحر شاکر
+  href: "#"
+- title: صدرا علی آبادی
+  href: "#"
+- title: سالار کابلی
+  href: "#"

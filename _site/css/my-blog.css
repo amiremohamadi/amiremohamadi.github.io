@@ -1,13 +1,10 @@
 @font-face {
-  font-family: 'IRANSansWeb-Light';
-  src: url('../fonts/IRANSansWeb-Light.eot');
-  src: url('../fonts/IRANSansWeb-Light.woff2') format('woff2'),
-       url('../fonts/IRANSansWeb-Light.woff') format('woff'),
-       url('../fonts/IRANSansWeb-Light.ttf') format('truetype'),
-       url('../fonts/IRANSansWeb-Light.svg#IRANSansWeb-Light') format('svg'),
-       url('../fonts/IRANSansWeb-Light.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: Vazir;
+	src: url('../fonts/Vazir.eot');
+	src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Vazir.woff') format('woff'),
+	url('../fonts/Vazir.ttf') format('truetype');
+	font-weight: normal;
 }
 html {
   direction: rtl;
@@ -25,7 +22,7 @@ html {
   }
 }
 .sidebar-container {
-  color: #bfbfbf;
+  color: #818181;
   font-size: 14px;
 }
 .sidebar-container h5 {
@@ -37,7 +34,7 @@ html {
   text-decoration: none;
 }
 .sidebar-container a {
-  color: #bfbfbf !important;
+  color: #5cb8a5 !important;
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
@@ -64,7 +61,7 @@ html {
   padding-left: 0px;
 }
 body {
-  font-family: 'IRANSansWeb-Light';
+  font-family: 'Vazir';
   line-height: 1.7;
   font-size: 16px;
   color: #404040;

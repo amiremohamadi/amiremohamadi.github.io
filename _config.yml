@@ -37,8 +37,7 @@ kramdown:
 ga_track_id: UA-49627206-1
 ga_domain: mamir.me
 sidebar: true
-sidebar-about-description: 'عاشق وررفتن با یه سری موجود دودویی که ظاهرا بهشون میگن:
-  کامپیوتر!'
+sidebar-about-description:  مطالبی که میخوانید حاصل ذهن مغشوش یک دانشجوی کامپیوتر بوده و مسئولیت هرگونه خطای احتمالی، به عهده ساکنین سیاره "کپلر ۶۹ سی" میباشد! 
 sidebar-avatar: "/img/avatar-hux.png"
 friends:
 - title: کیبرد آزاد

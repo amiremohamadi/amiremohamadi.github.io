@@ -1,0 +1,13 @@
+<div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-2">
+  <div class="d-flex flex-justify-between flex-items-start mb-1">
+    <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 mb-1">
+      <h2 class="f5 lh-condensed mb-1">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.excerpt }}
+        </a>
+      </h2>
+    </div>
+    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 text-gray mb-1 f7">{{ post.date | date: "%b %Y"}}</div>
+  </div>
+
+</div>

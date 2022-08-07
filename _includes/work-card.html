@@ -1,0 +1,34 @@
+<div class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 mb-1">
+      <h1 class="f4 lh-condensed mb-1">
+          {% octicon briefcase height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
+          {{ work.role }}
+      </h1>
+      <div class="text-gray mb-2 ws-normal">
+        <a href="{{ work.company_url }}">
+          <strong>
+          {{ work.company }}
+          </strong>
+        </a>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-gray mb-1 f7 text-right">{{ work.start }} - {{ work.end }}</div>
+    </div>
+
+
+        <!-- <div class="text-gray mb-2 ws-normal"> -->
+          <!-- <ul class="text-gray mb-2 ws-normal pl-3">
+            <li>
+              A
+            </li>
+            <li>
+              B
+            </li>
+          </ul> -->
+          {{ work.description }}
+        <!-- </div> -->
+
+  </div>
+</div>

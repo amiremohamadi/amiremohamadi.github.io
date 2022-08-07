@@ -1,0 +1,12 @@
+<div class="mb-2">
+{% octicon flame height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:News %}
+<span class="f3 v-align-middle">News</span>
+
+</div>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-1">
+  {% for post in site.posts limit: 3 %}
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-1">
+      {% include post-card.html %}
+    </div>
+  {% endfor %}
+</div>

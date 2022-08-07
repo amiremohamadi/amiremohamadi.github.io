@@ -1,50 +1,107 @@
----
-title: AMIR
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-SEOTitle: پسرک کامپیوترپیشه
-header-img: img/home-bg.jpg
-email: amiremohamadi@yahoo.com
-description: ''
-keyword: ''
-url: http://mamir.me
-RSS: false
-telegram_username: amiremohamadi
-# mail_username: amiremohamadi@yahoo.com
-github_username: amiremohamadi
-instagram_username: amiremohamadi
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude:
-- less
-- node_modules
-- Gruntfile.js
-- package.json
-- README.md
-anchorjs: true
+layout: sidebar
+style: light
+
 plugins:
-- jekyll-paginate
-markdown: kramdown
-kramdown:
-  input: GFM
-ga_track_id: UA-49627206-1
-ga_domain: mamir.me
-sidebar: true
-sidebar-about-description:  مطالبی که میخوانید حاصل ذهن مغشوش یک دانشجوی کامپیوتر بوده و مسئولیت هرگونه خطای احتمالی، به عهده ساکنین سیاره "کپلر ۶۹ سی" میباشد! 
-sidebar-avatar: "/img/avatar-hux.png"
-friends:
-- title: کیبرد آزاد
-  href: "#"
-- title: سحر شاکر
-  href: "#"
-- title: صدرا علی آبادی
-  href: "#"
-- title: سالار کابلی
-  href: "#"
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+bio: "The content you are reading is the result of the confused mind of a programmer, and the responsibility for any possible errors rests with the inhabitants of planet kepler-69c."
+
+about: "My name is Amir (a persian name, written as امیر), a hobbyist opensource contributor, interested in low-level stuffs. Currently I work as a Systems Engineer at ArvanCloud, building and maintaining new and exciting products. 
+"
+
+email: amiremohamadi@yahoo.com
+
+social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # hackerrank: your_username
+  instagram: amiremohamadi
+  # keybase: your_username
+  linkedin: amiremohamadi
+  github: amiremohamadi
+  # mastodon: your_username
+  # medium: noidsirius
+  # stackoverflow: 2681272/noidsirius
+  # telegram: your_username
+  # twitter: negarq
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  # youtube: your_username
+
+work:
+  - company: "ArvanCloud"
+    company_url: "https://arvancloud.com"
+    role: "Systems Engineer"
+    start: "Dec 2020"
+    end: "Present"
+    description: "<ul class='text-gray mb-2 ws-normal pl-3'>
+      <li> Working at CDN team, which at the moment is ranked among the top 10 CDN providers in the world (according to W3techs and Wappalyzer reports). </li>
+    </ul>"
+
+  - company: "Rahnema College"
+    company_url: "https://rahnemacollege.com"
+    role: "Mentor"
+    start: "Aug 2021"
+    end: "Oct 2021"
+    description: "<ul class='text-gray mb-2 ws-normal pl-3'>
+      <li> Help mentees to improve their technical knowledge specifically about dockerizing/deploying. </li>
+    </ul>"
+
+  - company: "Rahnema College"
+    company_url: "https://rahnemacollege.com"
+    role: "Intern"
+    start: "Jul 2019"
+    end: "Sep 2019"
+    description: "<ul class='text-gray mb-2 ws-normal pl-3'>
+      <li> Developed a real-time auction system using Java/Spring as a part of a team. </li>
+    </ul>"
+
+  - company: "Birjand LUG"
+    company_url: "https://birlug.ir"
+    role: "Founder - Volunteer Experience"
+    description: "<ul class='text-gray mb-2 ws-normal pl-3'>
+      <li> We meet regularly to discuss about computer-related topics specifically Linux and Free Software. </li>"
+
+projects:
+  - name: DuckX
+    description: C++ library for modifying Microsoft word (.docx) files
+    html_url: https://github.com/amiremohamadi/duckx
+    source: github
+
+  - name: Cpython
+    description: hobbyist contributor - official python interpreter
+    html_url: https://github.com/python/cpython/commits?author=amiremohamadi
+    source: github
+
+# topics:
+#   - name: Java
+
+#   - name: Program Analysis
+
+#   - name: Software Analysis and Testing
+
+#   - name: Machine Learning for Automated Software Engineering
+
+  # - name: CSS
+  #   web_url: https://github.com/topics/css
+  #   image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  #   description: I learned something I learned something I learned something I learned something
+
+  # - name: Web design
+
+  # - name: Sass
+  #   web_url: https://github.com/topics/sass
+  #   image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png

@@ -1,0 +1,45 @@
+<div class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+  <div>
+    <div class="d-flex flex-justify-between flex-items-start mb-1">
+      <h1 class="f4 lh-condensed mb-1">
+        <a href="{{ repository.html_url }}">
+          {% octicon repo height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
+          {{ repository.name }}
+        </a>
+      </h1>
+    </div>
+      {% if repository.conference %}
+        <div class="text-gray mb-2 ws-normal">
+          Published in {{ repository.conference }}
+        </div>
+      {% endif %}
+      {% if repository.authors %}
+        <div class="text-gray mb-2 ws-normal">
+          Authors: {{ repository.authors }}
+        </div>
+      {% endif %}
+    <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %}">
+      {% if repository.pdf %}
+        <div class="mr-3">
+          <a href="{{ repository.pdf }}" class="tooltipped tooltipped-se" aria-label="Download PDF">
+            {% octicon file height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:download %}
+          </a>
+        </div>
+      {% endif %}
+      {% if repository.repo %}
+        <div class="mr-3">
+          <a href="{{ repository.repo }}" class="tooltipped tooltipped-se" aria-label="Repository">
+            {% octicon mark-github height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repository %}
+          </a>
+        </div>
+      {% endif %}
+      {% if repository.video %}
+        <div class="mr-3">
+          <a href="{{ repository.video }}" class="tooltipped tooltipped-se" aria-label="Video">
+            {% octicon device-camera-video height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:video %}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

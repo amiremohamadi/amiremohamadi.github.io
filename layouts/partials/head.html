@@ -1,0 +1,15 @@
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	{{- $title := ( .Title ) -}}
+	{{- $siteTitle := ( .Site.Title ) -}}
+	{{- if .IsHome -}}
+	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
+	{{- else -}}
+	<title>{{ $title }} - {{ $siteTitle }}</title>
+	{{- end -}}
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/noto-naskh-arabic" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lalezar" rel="stylesheet">
+</head>

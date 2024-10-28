@@ -1,0 +1,5 @@
+baseURL = 'https://amiremohamadi.github.io/'
+languageCode = 'en-us'
+
+[params]
+  mainSections = ['post']

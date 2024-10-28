@@ -1,0 +1,51 @@
+{{ $time := . }}
+
+{{ $year := $time.Year | int }}
+{{ $month := $time.Month }}
+{{ $day := $time.Day | int }}
+
+{{ $georgianDaysInMonth := slice 0 31 59 90 120 151 181 212 243 273 304 334 }}
+
+{{ $jYear := cond (gt $year 1600) 979 0 }}
+{{ $year := (sub $year (cond (gt $year 1600) 1600 621)) }}
+
+{{ $leapYear := cond (gt $month 2) (add $year 1) $year }}
+
+{{ $days := (sub (add (mul $year 365) (div (add $leapYear 3) 4)) (div (add $leapYear 99) 100)) }}
+{{ $days = (add $days (add (div (add $leapYear 399) 400) (add (sub $day 80) (index $georgianDaysInMonth (sub $month 1))))) }}
+
+{{ $jYear = (add $jYear (mul (div $days 12053) 33)) }}
+{{ $days = (mod $days 12053) }}
+{{ $jYear = (add $jYear (mul (div $days 1461) 4)) }}
+{{ $days = (mod $days 1461) }}
+
+<!-- correct the leap year case -->
+{{ if gt $days 365 }}
+  {{ $jYear = (add $jYear (div (sub $days 1) 365)) }}
+  {{ $days = (mod (sub $days 1) 365) }}
+{{ end }}
+
+<!-- determine jalali month and day -->
+{{ $jMonth := (add (div $days 31) 1) }}
+{{ $jDay := (add (mod $days 31) 1) }}
+{{ if ge $days 186 }}
+  {{ $days = (sub $days 186)}}
+  {{ $jMonth = (add (div $days 30) 7) }}
+  {{ $jDay = (add (mod $days 30) 1) }}
+{{ end }}
+
+<!-- convert to desired format -->
+{{ $monthNames := slice "فروردین" "اردیبهشت" "خرداد" "تیر" "مرداد" "شهریور" "مهر" "آبان" "آذر" "دی" "بهمن" "اسفند" }}
+{{ $formatted := printf "%02d %s %04d" $jDay (index $monthNames (sub $jMonth 1)) $jYear }}
+
+<!-- convert to persian digits -->
+{{ $formatted := replace $formatted "0" "۰" }}
+{{ $formatted := replace $formatted "1" "۱" }}
+{{ $formatted := replace $formatted "2" "۲" }}
+{{ $formatted := replace $formatted "3" "۳" }}
+{{ $formatted := replace $formatted "4" "۴" }}
+{{ $formatted := replace $formatted "5" "۵" }}
+{{ $formatted := replace $formatted "6" "۶" }}
+{{ $formatted := replace $formatted "7" "۷" }}
+{{ $formatted := replace $formatted "8" "۸" }}
+{{  replace $formatted "9" "۹" }}

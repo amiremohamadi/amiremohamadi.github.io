@@ -2,7 +2,8 @@
 {{ partial "head.html" . }}
     <body>
         <main role="main">
-            <h1>{{ .Title }}</h1>
+            <h1 class="post-title">{{ .Title }}</h1>
+            <h3 class="post-date">{{ partial "persianDate.html" .Date }}</h3>
             {{ .Content }}
         </main>
         {{ partial "footer.html" . }}

@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Naskh Arabic', sans-serif;
     direction: rtl;
 	color: black;
-	font-size: 17px;
+	font-size: 20px;
     line-height: 2;
 	margin: 0px auto 0px auto;
 	padding: 0px 1em 0px 1em;
@@ -59,6 +59,12 @@ h2 {
 	font-size: 24px
 }
 
+h3 {
+	font-weight: normal;
+    font-family: 'Lalezar', sans-serif;
+	font-size: 20px;
+}
+
 article .header {
 	color: #555;
 	font-size: 14px;
@@ -99,4 +105,13 @@ code {
 	text-align: right;
 	font-size: 16px;
     direction: ltr;
+}
+
+.post-title {
+    line-height: 0.5;
+    margin-top: 50px;
+}
+
+.post-date {
+    color: #555;
 }

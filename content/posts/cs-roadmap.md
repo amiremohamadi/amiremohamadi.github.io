@@ -43,8 +43,7 @@ type: post
 	- [شبکه‌های کامپیوتری - تننبام](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Computer%20Networks.pdf)
 	- [Computer Networks - A Top-Down Approach](https://www.ucg.ac.me/skladiste/blog_44233/objava_64433/fajlovi/Computer%20Networking%20_%20A%20Top%20Down%20Approach,%207th,%20converted.pdf)
 
-- **دیگه چی؟**
-	- اگه لازم باشه برمی‌گردم و محاسبات عددی، جبر خطی و آمار و احتمال رو دوباره و با دقت بیشتری می‌خونم.
-	- دوره دانشجویی فقدان کارگاه یا سرفصلی جدی برای git رو احساس می‌کردم.
-
+- این دو تا رو توی کتابخونه دانشگاه پیدا کرده بودم و اونقدری برام جالب بودن که هنوز اسم‌شون رو به خاطر بیارم:
+	- [هنر باستانی شمارش](http://guidetodatamining.com)
+	- [درآمدی تصویری بر نظریه بازی](https://www.goodreads.com/book/show/33296368-introducing-game-theory)
 

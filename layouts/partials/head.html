@@ -9,6 +9,9 @@
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
+	{{- template "_internal/opengraph.html" . -}}
+	{{- template "_internal/twitter_cards.html" . -}}
+
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/style.css" />
     <link href="https://fonts.cdnfonts.com/css/noto-naskh-arabic" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lalezar" rel="stylesheet">

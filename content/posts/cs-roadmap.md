@@ -16,7 +16,7 @@ type: post
 	- [کتاب طراحی و پیاده‌سازی سیستم‌های عامل - اندرو تننبام ](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Operating%20Systems.%20Design%20and%20Implementation.pdf)
 
 - **ساختمان داده و الگوریتم‌ها**
-	- [ساختمان داده‌ها - شریفی زارچی](https://ocw.sharif.ir/course/id/95)
+	- [ساختمان داده‌ها - شریفی زارچی](https://ocw.sharif.ir/course/id/272)
 	- [مقدمه‌ای بر الگوریتم‌ها (CLRS)](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)
 	- من خیلی اهل رقابت و مسابقه نیستم ولی این کتاب‌ها بخش خوبی از پایه الگوریتمی‌م رو ساختن و خیلی هم در مصاحبه‌های شغلی ازشون کمک گرفتم. همینطور اگه به المپیاد و برنامه‌نویسی مسابقه‌ای علاقه دارین ممکنه براتون جالب باشند:
 		- [آشنایی با نظریه گراف - وست](https://athena.nitc.ac.in/summerschool/Files/West.pdf)
